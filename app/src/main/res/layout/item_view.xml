@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/data_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    app:cardCornerRadius = "20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Nombre:"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvnombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/nombre"
+                android:layout_margin="5dp"
+                android:text="Carlos Fernando"
+                />
+
+            <TextView
+                android:id="@+id/apellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvnombre"
+                android:layout_margin="5dp"
+                android:text="Apellido:"
+                />
+
+            <TextView
+                android:id="@+id/tvApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/apellido"
+                android:layout_margin="5dp"
+                android:text="Aguilar González"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fechaNac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento:"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvfechaNac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2001-01-01"
+                android:layout_toEndOf="@+id/fechaNac"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo:"
+                android:layout_toEndOf="@+id/tvfechaNac"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ing."
+                android:layout_toEndOf="@+id/titulo"
+                android:layout_margin="5dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignParentTop="true"
+                android:text="Email"
+                />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/email"
+                android:text="carlos.aguilar7244@est.uca.edu.ni"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            >
+            <TextView
+                android:id="@+id/facultad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentStart="true"
+                android:text="Facultad:"
+                />
+
+            <TextView
+                android:id="@+id/tvfacultad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/facultad"
+                android:text="Humanidades"/>
+
+            <TextView
+                android:id="@+id/idC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/tvfacultad"
+                android:text="Id:" />
+
+            <TextView
+                android:id="@+id/tvidC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/idC"
+                android:text="1"/>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
